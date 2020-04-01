@@ -4,7 +4,8 @@
       // Latest stable ECMAScript features
       "@babel/preset-env",
       {
-        "useBuiltIns": "entry",
+        "corejs": 3,
+        "useBuiltIns": "usage",
         // Do not transform modules to CJS
         "modules": false,
         "targets": {
