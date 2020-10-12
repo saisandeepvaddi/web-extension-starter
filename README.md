@@ -1,9 +1,9 @@
 <h1 align="center">🚀 web-extension-starter</h1>
 <h3 align="center">TypeScript + React Version</h3>
 <p align="center">Web Extension starter to build "Write Once Run on Any Browser" extension</p>
-<h3 align="center">🙋‍♂️ Made by <a href="https://twitter.com/_abhijithv">@abhijithvijayan</a></h3>
+<h3 align="center">🙋‍♂️ Original Made by <a href="https://twitter.com/_abhijithv">@abhijithvijayan</a></h3>
 <p align="center">
-  Donate:
+  Donate to Upstream Author:
   <a href="https://www.paypal.me/iamabhijithvijayan" target='_blank'><i><b>PayPal</b></i></a>,
   <a href="https://www.patreon.com/abhijithvijayan" target='_blank'><i><b>Patreon</b></i></a>
 </p>
@@ -27,6 +27,12 @@
 - ES6 modules support
 - React UI Library by default
 - Smart reload
+
+## Changes from Upstream
+- Updated all dependencies and webpack config
+- Commented default styles
+- Added some utility scripts
+- Added some code for communication utilities btw Background Script and Content Script (Check [BackgroundScript](/src/Background/BackgroundScript.ts) and [ContentScript](src/ContentScript/index.ts))
 
 ## Browser Support
 
