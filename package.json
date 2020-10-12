@@ -3,13 +3,9 @@
   "version": "2.0.0",
   "description": "Web extension starter using react and typescript",
   "private": true,
-  "repository": "https://github.com/abhijithvijayan/web-extension-starter.git",
-  "author": "abhijithvijayan <34790378+abhijithvijayan@users.noreply.github.com>",
+  "repository": "https://github.com/saisandeepvaddi/web-extension-starter.git",
+  "author": "Sai Sandeep Vaddi",
   "license": "MIT",
-  "engines": {
-    "node": ">=10.0.0",
-    "yarn": ">= 1.0.0"
-  },
   "scripts": {
     "dev:chrome": "cross-env NODE_ENV=development cross-env TARGET_BROWSER=chrome webpack --watch",
     "dev:firefox": "cross-env NODE_ENV=development cross-env TARGET_BROWSER=firefox webpack --watch",
@@ -25,8 +21,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.11.2",
+    "@blueprintjs/core": "^3.33.0",
+    "axios": "^0.20.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-query": "^2.23.1",
     "webext-base-css": "^1.2.0",
     "webextension-polyfill-ts": "^0.20.0"
   },
