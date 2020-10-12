@@ -22,6 +22,7 @@ const Popup: React.FC = () => {
       </button>
       <div className="links__holder">
         <ul>
+          
           <li>
             <button
               type="button"
@@ -31,7 +32,19 @@ const Popup: React.FC = () => {
                 );
               }}
             >
-              GitHub
+              GitHub (me saisandeepvaddi)
+            </button>
+          </li>
+          <li>
+            <button
+              type="button"
+              onClick={(): Promise<Tabs.Tab> => {
+                return openWebPage(
+                  "https://github.com/abhijithvijayan/web-extension-starter"
+                );
+              }}
+            >
+              GitHub (upstream author abhijithvijayan)
             </button>
           </li>
           <li>
@@ -43,7 +56,7 @@ const Popup: React.FC = () => {
                 );
               }}
             >
-              Buy Me A Coffee
+              Buy Me A Coffee (to the upstream author)
             </button>
           </li>
         </ul>

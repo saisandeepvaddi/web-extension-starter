@@ -1,5 +1,4 @@
-import { browser } from "webextension-polyfill-ts";
+import { BackgroundScript } from "./BackgroundScript";
 
-browser.runtime.onInstalled.addListener((): void => {
-  console.log("extension installed");
-});
+const backgroundScript = new BackgroundScript();
+backgroundScript.init();
