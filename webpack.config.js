@@ -95,8 +95,11 @@ module.exports = {
           {
             loader: "postcss-loader", // For autoprefixer
             options: {
-              ident: "postcss",
-              plugins: [require("autoprefixer")()],
+              postcssOptions: {
+                ident: "postcss",
+                // eslint-disable-next-line global-require, @typescript-eslint/no-var-requires
+                plugins: ["postcss-preset-env"],
+              },
             },
           },
           "resolve-url-loader", // Rewrites relative paths in url() statements
@@ -137,7 +140,9 @@ module.exports = {
     // write css file(s) to build folder
     new MiniCssExtractPlugin({ filename: "css/[name].css" }),
     // copy static assets
-    new CopyWebpackPlugin([{ from: "src/assets", to: "assets" }]),
+    new CopyWebpackPlugin({
+      patterns: [{ from: "src/assets", to: "assets" }],
+    }),
     // write manifest.json
     new WriteWebpackPlugin([
       { name: manifest.name, data: Buffer.from(manifest.content) },

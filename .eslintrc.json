@@ -1,51 +1,12 @@
 {
-  "parser": "babel-eslint",
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "allowImportExportEverywhere": true
-  },
-  "extends": [
-    "prettier",
-    "prettier/react",
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings"
-  ],
-  "plugins": ["prettier", "react", "react-hooks"],
-  "env": {
-    "browser": true,
-    "node": true,
-    "es6": true,
-    "jest": true
-  },
+  "extends": ["@saisandeepvaddi/eslint-config-typescript"],
   "rules": {
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "off",
-    "array-callback-return": "off",
     "no-console": "off",
-    "no-debugger": "error",
-    "no-undef": "error",
-    "no-unused-vars": "error",
-    "eqeqeq": "error",
-    "no-var": "error",
-    "react/prop-types": "off",
-    "react/display-name": "off",
-    "linebreak-style": "off",
-    "no-nested-ternary": "off",
-    "consistent-return": "off",
-    "no-use-before-define": "error",
-    "prettier/prettier": "error"
+    "no-extend-native": "off",
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/label-has-associated-control": "off"
   },
-  "settings": {
-    "react": {
-      "version": "detect"
-    },
-    "import/resolver": {
-      "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx", ".scss", ".png"],
-        "moduleDirectory": ["node_modules", "src/"]
-      }
-    }
+  "env": {
+    "webextensions": true
   }
 }
