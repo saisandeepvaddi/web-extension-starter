@@ -1,12 +1,10 @@
-import Axios, { AxiosResponse } from "axios"
-import { config } from "./config"
+import Axios, { AxiosResponse } from "axios";
+import { config } from "./config";
 
 export const DataService = {
-  async getProjects() {
-    const response: AxiosResponse = await Axios.get(
-      `${config.server}/projects`
-    );
+  async getUsers() {
+    const response: AxiosResponse = await Axios.get(`${config.server}/users`);
     const projects: any = response.data;
     return projects;
-  }
-}
+  },
+};
